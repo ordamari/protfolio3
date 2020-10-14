@@ -1,0 +1,10 @@
+.protfolio{
+    margin: 30px 0;
+    text-align: center;
+    ul{
+        margin-top: 30px;
+        display: grid;
+        grid-gap:20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

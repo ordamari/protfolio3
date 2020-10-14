@@ -1,0 +1,21 @@
+.navbar {
+    background-color: $clr1;
+
+    &.scrolled{
+        position: fixed;
+        background-color: #00051c88;
+        width: 100%;
+    }
+   
+    li {
+        padding: 10px;
+        color: $clr4;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .logo {
+        font-family: lobster;
+    }
+}
+
