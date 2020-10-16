@@ -19,7 +19,7 @@ export function Specialities(props) {
     return (
         <section ref={myRef} className='main-container specialties'>
 
-            <h1>SPECIALITIES</h1>
+            <h1>EXPERIENCE</h1>
             <ul>
                 <li>
                     <div className="svg-container">

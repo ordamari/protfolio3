@@ -5,19 +5,19 @@ import { Footer } from './cmps/Footer';
 import { Navbar } from './cmps/Navbar';
 import { ProjectDetails } from './cmps/ProjectDetails';
 
-import {Home} from './pages/Home';
+import { Home } from './pages/Home';
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar/>
+        <Navbar />
         <Switch>
-        <Route component={ProjectDetails} path='/:id' />
-        <Route component={Home} path='/' />
+          <Route component={ProjectDetails} path='/:id' />
+          <Route component={Home} path='/' />
         </Switch>
-        <Footer/>
+        <Footer />
       </Router>
     </div>
   );

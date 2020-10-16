@@ -9,6 +9,10 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+
+     path:hover{
+        color:$clr4;
+     }   
     }
 
     a {
@@ -18,4 +22,10 @@ footer {
         }
     }
 
+}
+
+@media(max-width:760px){
+    footer{
+        justify-content: center;
+    }
 }

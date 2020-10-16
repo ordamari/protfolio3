@@ -7,6 +7,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import positionService from '../services/positionService';
 import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import cv from '../assets/files/cv.docx'
 
 export function Footer(props) {
@@ -14,7 +15,7 @@ export function Footer(props) {
 
     useEffect(() => {
         const pos = myRef.current.offsetTop
-        positionService.setNewPos('contact',pos)
+        positionService.setNewPos('contact', pos)
         console.log(pos);
     }, [])
 
@@ -22,12 +23,13 @@ export function Footer(props) {
         <div ref={myRef} className="main-container bgclr1">
             <footer>
                 <div className="social">
-                    <a href="https://github.com/ordamari"><GitHubIcon /></a>
-                    <a href="https://www.linkedin.com/in/or-damari-8534561b3/"><LinkedInIcon /></a>
-                    <a href=""><FacebookIcon /></a>
-                    <a href={cv}><SystemUpdateAltIcon /></a>
+                    <a title="My github pages page" href="https://github.com/ordamari"><GitHubIcon /></a>
+                    <a title="My linkedin pages page" href="https://www.linkedin.com/in/or-damari-8534561b3/"><LinkedInIcon /></a>
+                    <a title="Messege me" href="https://wa.me/972503990939" aria-hidden="true"><WhatsAppIcon /></a>
+                    <a title="Dowloand my cv" href={cv}><SystemUpdateAltIcon /></a>
+                    <a className="onlyMobile" title="Send me mail" href="mailto:ordamari971@gmail.com"><MailIcon /></a>
                 </div>
-                <h3>ordamari971@gmail.com</h3>
+                <h3 className='onlyDesktop' title="Send me mail" ><a href="mailto:ordamari971@gmail.com">ordamari971@gmail.com</a></h3>
 
 
             </footer>

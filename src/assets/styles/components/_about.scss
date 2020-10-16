@@ -29,3 +29,13 @@
         }
     }
 }
+
+@media(max-width:760px){
+    .about {
+        flex-direction: column;
+        .summary{
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 .project-details-container {
     text-align: center;
+    min-height: 100vh;
 
     p {
         margin: 0;
@@ -19,6 +20,7 @@
         
         img {
             width: 70%;
+            margin-bottom: 50px;
         }
     }
 }
