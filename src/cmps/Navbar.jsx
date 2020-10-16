@@ -67,10 +67,10 @@ export function Navbar(props) {
             </ul>
 
             <ul className={`second-list ${getMenuClass()}`}>
-                <li onClick={() => scrollToTareget('contact')}><Link to="/">Contact</Link></li>
                 <li className="onlyMobile" onClick={() => mobileMenuClick('specialties')}><Link to="/">Exprience</Link></li>
                 <li className="onlyMobile" onClick={() => mobileMenuClick('protfolio')}><Link to="/">Protfolio</Link></li>
                 <li className="onlyMobile" onClick={() => mobileMenuClick('about')}><Link to="/">About</Link></li>
+                <li onClick={() => scrollToTareget('contact')}><Link to="/">Contact</Link></li>
             </ul>
 
         </header>
