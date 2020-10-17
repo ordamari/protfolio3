@@ -21,7 +21,6 @@ export function Navbar(props) {
     }, [isOpen])
 
     function toggleMenu() {
-        console.log('sadsad');
         setIsOpen(!isOpen);
     }
 

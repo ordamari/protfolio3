@@ -12,7 +12,6 @@ export function Specialities(props) {
     useEffect(() => {
         const pos = myRef.current.offsetTop
         positionService.setNewPos('specialties',pos)
-        console.log(pos);
     }, [])
 
 

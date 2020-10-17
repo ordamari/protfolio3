@@ -13,7 +13,6 @@ export function About(props) {
     useEffect(() => {
         const pos = myRef.current.offsetTop
         positionService.setNewPos('about',pos)
-        console.log(pos);
     }, [])
     
     return (

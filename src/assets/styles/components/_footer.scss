@@ -22,7 +22,8 @@ footer {
         cursor: pointer;
 
         &:hover{
-            animation: bgc 1s forwards;
+            border: 3px solid $clr2;
+            animation: bgc .7s forwards;
             opacity: 1;
 
         }
@@ -33,13 +34,17 @@ footer {
         align-items: center;
         justify-content: center;
 
-        path:hover {
-            color: $clr4;
+        a:hover {
+            
+            animation: fill .7s forwards;
         }
     }
 
     a {
+        padding: 10px;
+        border: 1px solid $clr1; 
         margin-right: 20px;
+
 
         .MuiSvgIcon-root {
             font-size: rem(30px);
@@ -51,23 +56,32 @@ footer {
 @media(max-width:760px) {
     footer {
         justify-content: center;
+
+        a {
+            padding: 5px;
+        }
     }
 }
 
 @keyframes bgc {
-    0% {}
-
+    0% {
+        border-right: 3px solid $clr1;
+    }
+    
     33% {
-        background: linear-gradient(90deg, $clr2 0%, $clr3 100%);
+        border-right: 3px solid $clr1;
+        border-bottom: 3px solid $clr1;
     }
-
+    
     66% {
-
+        border-right: 3px solid $clr1;
+        border-bottom: 3px solid $clr1;
+        border-left: 3px solid $clr1;
+        
     }
-
+    
     100% {
-        background-color: $clr2;
-        color: $clr1;
+        border: 3px solid $clr1;
 
     }
 }

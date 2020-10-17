@@ -12,7 +12,6 @@ export function Protfolio({projects}) {
     useEffect(() => {
         const pos = myRef.current.offsetTop
         positionService.setNewPos('protfolio',pos)
-        console.log(pos);
     }, [])
 
     return (

@@ -17,7 +17,6 @@ export function Footer(props) {
     useEffect(() => {
         const pos = myRef.current.offsetTop
         positionService.setNewPos('contact', pos)
-        console.log(pos);
     }, [])
 
     function scrollToTareget(target) {
