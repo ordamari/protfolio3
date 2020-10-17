@@ -23,6 +23,10 @@ export function ProjectDetails(props) {
                         <h4><span>Technologies:</span>  {proj.technologies.join(', ')}</h4>
                     </div>
                         <a href={proj.url}>Click  me to app</a>
+                        <div>
+                        <button onClick={()=>{props.history.goBack()}}>Back</button>
+                        </div>
+
                         
                 </div>
             </div>

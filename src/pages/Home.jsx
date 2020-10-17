@@ -54,7 +54,7 @@ export function Home(props) {
                     <h2>Hi, I'm Or Damari.</h2>
                     <h1>{txt}<span>|</span></h1>
                     {/* <h1>Full Stack Web Developer</h1> */}
-                    <button className='onlyDesktop' onClick={() => scrollToTareget('specialties')}>Show more</button>
+                    <button  onClick={() => scrollToTareget('specialties')}>Show more</button>
                 </div>
             </div>
             <Specialities />

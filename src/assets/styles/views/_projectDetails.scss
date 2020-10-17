@@ -2,6 +2,22 @@
     text-align: center;
     min-height: 100vh;
     
+    button {
+        padding: 10px;
+        margin-top: 25px;
+        background-color: rgba(0, 0, 0, 0.329);
+        color: $clr2;
+        font-size: 25px;
+        border: 2px solid $clr2;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .5s;
+        z-index: 0;
+
+        &:hover {
+            font-size: 28px;
+        }
+    }
 
     .mt72{
         margin-top: 72px;
