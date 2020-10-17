@@ -13,6 +13,7 @@
             width: 33.3%;
             text-align: center;
             padding: 0 5px;
+            padding: 30px 5px;
 
             .svg-container {
                 margin: 0 auto;
@@ -38,6 +39,11 @@
                 margin-top: 30px;
                 font-size: rem(16px);
                 color: $clr2;
+            }
+
+            &:hover{
+                background-color: #fff;
+                border-radius: 5px;
             }
         }
     }
