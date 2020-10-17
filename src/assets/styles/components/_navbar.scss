@@ -3,6 +3,12 @@
     position: fixed;
     width: 100%;
 
+    ul{
+        padding: 0 30px ;
+    }
+
+
+   
     &.scrolled {
         background-color: #00051c88;
     }
@@ -59,6 +65,8 @@
             text-align: center;
             transition: width 1s;
             width: 0;
+            margin: 0;
+            padding: 0;
             z-index: 2;
             &.open{
                 width: 200px;

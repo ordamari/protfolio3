@@ -17,11 +17,12 @@
             .svg-container {
                 margin: 0 auto;
                 background-color: $clr2;
-                height: 100px;
-                width: 100px;
+                height: 150px;
+                width: 150px;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
+                font-size: 100px;
 
 
                 svg {
@@ -44,7 +45,7 @@
     font-size: 40px;
 }
 
-@media(max-width:720px){
+@media(max-width:760px){
     .specialties{
         ul{
             flex-direction: column;

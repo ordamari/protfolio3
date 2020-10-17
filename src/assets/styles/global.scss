@@ -23,4 +23,22 @@
 @import "views/home.scss";
 @import "views/projectDetails.scss";
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 120px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $clr2;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-button {
+    background: $clr2;
+    height: 5px;
+}
 
