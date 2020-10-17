@@ -25,7 +25,6 @@ export function About(props) {
                     <h2>Or Damari</h2>
                 </div>
                 <div className="summary">
-
                     <h4>Hi, I'm a Full-Stack / Frontend  Web Developer with knowledge and experience writing single-page-applications Using the latest WEB technologies such as Node.js, Vue.js, Vuex, React.js and Angular</h4>
                     <h4>A team player, hard worker, focusing on problem solving and detailed orientation, self-learner responsible, and adapt quickly to new environments</h4>
                 </div>
