@@ -48,7 +48,7 @@ const gProject = [
   },
   {
     id: 'p105',
-    url: 'https://ordamari.github.io/weather/',
+    url: 'https://ordamari.github.io/protfolio/#/',
     title: 'Protfolio',
     description: 'This app, app that show my protfolio and experience',
     createAt: '17/10/20',
