@@ -55,7 +55,7 @@ export function Navbar(props) {
             <ul className='flex '>
                 <li className='logo' onClick={() => scrollToTareget(0)}><Link to="/">Or Damari</Link></li>
                 <li className="onlyDesktop" onClick={() => { scrollToTareget('specialties') }}><Link to="/">Exprience</Link></li>
-                <li className="onlyDesktop" onClick={() => scrollToTareget('protfolio')}><Link to="/">Protfolio</Link></li>
+                <li className="onlyDesktop" onClick={() => scrollToTareget('protfolio')}><Link to="/">Portfolio</Link></li>
                 <li className="onlyDesktop" onClick={() => scrollToTareget('about')}><Link to="/">About</Link></li>
             </ul>
 

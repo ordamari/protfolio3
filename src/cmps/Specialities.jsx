@@ -32,14 +32,14 @@ export function Specialities(props) {
                         <FaNodeJs />
                     </div>
                     <h4>Back End</h4>
-                    <p>Working with nodeJS, MongoDB, rest API and WebSocket with</p>
+                    <p>Working with nodeJS, MongoDB, rest API and WebSocket.</p>
                 </li>
                 <li>
                     <div className="svg-container">
                         <FaCss3Alt />
                     </div>
                     <h4>Design</h4>
-                    <p>Working with libarys such as Material UI and chartjs, design app using css and sass, with some experience in UX UI and responsive apps</p>
+                    <p>Working with Libraries such as Material UI and chartjs, design app using css and sass, with some experience in UX UI and responsive apps.</p>
                 </li>
             </ul>
 

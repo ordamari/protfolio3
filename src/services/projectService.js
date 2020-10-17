@@ -24,7 +24,7 @@ const gProject = [
     description: 'marketplace of quizzes, in this app you can create and edit quizzes, you can play quizzes that you or another users build, you can play in single player or create room and invite your friends to play against you in real time',
     imgUrl: 'https://res.cloudinary.com/dif8yy3on/image/upload/v1601908789/z7xtpekxpjdipalyzxak.jpg',
     createAt: '30/09/20',
-    technologies: ['react', 'sass', 'redux', 'socket.io', 'node.js', 'mongoDB', 'rest API', 'ajax', 'express', 'SPA']
+    technologies: ['React', 'sass', 'redux', 'socket.io', 'node.js', 'mongoDB', 'rest API', 'ajax', 'express', 'SPA']
   },
   {
     id: 'p103',

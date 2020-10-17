@@ -16,7 +16,7 @@ export function Protfolio({projects}) {
 
     return (
         <section ref={myRef} className='main-container protfolio'>
-            <h1>PROTFOLIO</h1>
+            <h1>PORTFOLIO</h1>
             <ul>
                 {projects && projects.map((proj,idx)=><ProjectPreview key={idx} proj={proj} />)}
             </ul>
