@@ -16,11 +16,8 @@
             padding-left: 10px;
         }
 
-        h1 {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: none;
-            animation: textEfect 3s forwards;
+        span {
+            animation: span-animation 1s infinite ;
         }
 
         button {
@@ -71,13 +68,21 @@
     }
 }
 
-@keyframes textEfect {
+@keyframes span-animation {
     0% {
-        max-width: 0px;
+        opacity: 1;
     }
-
+    
+    33% {
+        opacity: 0;
+        
+    }
+    66% {
+        opacity: 1;
+    }
+    
     100% {
-        max-width: 100%;
+        opacity: 0;
 
     }
 }

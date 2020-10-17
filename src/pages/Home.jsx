@@ -10,9 +10,7 @@ import positionService from '../services/positionService';
 export function Home(props) {
 
     const [txt, setTxt] = useState('');
-    const [currTxt, setCurrTxt] = useState(1);
-    var str1 = 'FullStack Web Developer';
-    var str2 = 'Front End Web Developer';
+    var str = 'FullStack Web Developer';
     var interval = '';
 
     const projects = projectService.query();
@@ -25,28 +23,27 @@ export function Home(props) {
 
     useEffect(() => {
         interval = setInterval(() => {
-            if (currTxt === 1) {
-                if (txt !== str1) setTxt((prevText => prevText + str1.charAt(prevText.length)))
-            } else {
-                if (txt !== str2) setTxt(txt + str2.charAt(txt.length))
-            }
-
+            if (txt !== str) setTxt((prevText => prevText + str.charAt(prevText.length)))
         }, 200)
 
-        return (clearInterval(interval))
+        return ()=>{
+            clearInterval(interval)
+        }
+
 
 
     }, [])
 
     useEffect(() => {
-        if (txt === str1) {
-            setCurrTxt(2);
-            setTxt('')
-        } else if (txt === str2) {
-            setCurrTxt(1);
-            setTxt('')
-        }
+       if(txt===str) setTimeout(() => {
+           setTxt('');
+       }, 1000);
+
+
     }, [txt])
+
+
+
 
 
 
@@ -55,7 +52,8 @@ export function Home(props) {
             <div className='main-img'>
                 <div className='main-info'>
                     <h2>Hi, I'm Or Damari.</h2>
-                    <h1>Full Stack Web Developer</h1>
+                    <h1>{txt}<span>|</span></h1>
+                    {/* <h1>Full Stack Web Developer</h1> */}
                     <button onClick={() => scrollToTareget('specialties')}>Show more</button>
                 </div>
             </div>

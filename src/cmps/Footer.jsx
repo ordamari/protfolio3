@@ -9,6 +9,7 @@ import positionService from '../services/positionService';
 import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import cv from '../assets/files/cv.docx'
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
 export function Footer(props) {
     const myRef = useRef(null)
@@ -19,6 +20,12 @@ export function Footer(props) {
         console.log(pos);
     }, [])
 
+    function scrollToTareget(target) {
+        let pos = 0
+        if (target) pos = positionService.query()[target] - 72
+        window.scrollTo(0, pos)
+    }
+
     return (
         <div ref={myRef} className="main-container bgclr1">
             <footer>
@@ -28,6 +35,9 @@ export function Footer(props) {
                     <a title="Messege me" href="https://wa.me/972503990939" aria-hidden="true"><WhatsAppIcon /></a>
                     <a title="Dowloand my cv" href={cv}><SystemUpdateAltIcon /></a>
                     <a className="onlyMobile" title="Send me mail" href="mailto:ordamari971@gmail.com"><MailIcon /></a>
+                </div>
+                <div onClick={scrollToTareget} className="arrow">
+                    <ArrowUpwardIcon/>
                 </div>
                 <h3 className='onlyDesktop' title="Send me mail" ><a href="mailto:ordamari971@gmail.com">ordamari971@gmail.com</a></h3>
 
