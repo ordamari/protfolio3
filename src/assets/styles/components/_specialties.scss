@@ -1,55 +1,6 @@
 .specialties {
     background-color: $clr5;
     text-align: center;
-    // padding: 80px 0;
-
-    // ul {
-    //     padding-top: 50px;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     gap: 30px;
-
-    //     li {
-    //         width: 33.3%;
-    //         text-align: center;
-    //         padding: 0 5px;
-    //         padding: 30px 5px;
-
-    //         .svg-container {
-    //             margin: 0 auto;
-    //             background-color: $clr2;
-    //             height: 150px;
-    //             width: 150px;
-    //             border-radius: 50%;
-    //             display: flex;
-    //             align-items: center;
-    //             font-size: 100px;
-
-
-    //             svg {
-    //                 margin: 0 auto;
-    //             }
-    //         }
-
-    //         h4 {
-    //             margin-top: 30px;
-    //         }
-
-    //         p {
-    //             margin-top: 30px;
-    //             font-size: rem(16px);
-    //             color: $clr2;
-    //         }
-
-    //         &:hover{
-    //             background-color: #fff;
-    //             border-radius: 5px;
-    //         }
-    //     }
-    // }
-
-    // font-size: 40px;
-
     .main-list {
         align-items: start;
         justify-content: left;
@@ -60,7 +11,7 @@
             background-color: $clr5;
             transition: width 1s;
             width: 25%;
-            height: 100vh;
+            height: 1013.64px;
 
             h2 {
                 transform: rotate(-90deg);
@@ -68,30 +19,34 @@
             }
 
             ul {
-                display: none;
+                height: 100%;
+
+                opacity: 0;
 
                 li {
-                    p {
-                        font-size: 1rem;
-                    }
+                    width: 100px;
 
-                    font-size: 70px;
+
                 }
             }
 
             &.choosen {
                 background-color: #fff;
                 width: 50%;
+                height: 1013.64px;;
                 transition: width 1s;
 
                 h2 {
-                    transition: transform 1s;
                     transform: rotate(0deg);
+                    transition: transform 1s;
                 }
 
                 ul {
+                    transition: opacity 1s;
+                    opacity: 1;
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     justify-content: space-between;
                 }
             }

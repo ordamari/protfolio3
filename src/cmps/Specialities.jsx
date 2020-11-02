@@ -7,6 +7,19 @@ import positionService from '../services/positionService';
 import { FaVuejs, FaAngular, FaNode } from 'react-icons/fa';
 import { SiJavascript, AiFillHtml5, DiSass, SiJquery, DiJavascript, SiMongodb, SiMysql, SiFirebase, AiFillGithub, SiHeroku } from 'react-icons/all';
 import { Check } from '@material-ui/icons';
+import  reactIcon  from '../assets/img/react.png'
+import  vueIcon  from '../assets/img/vue.png'
+import  angularIcon  from '../assets/img/angular.png'
+import  jqueryIcon  from '../assets/img/jquery.png'
+import  nodejsIcon  from '../assets/img/nodejs.png'
+import  jsIcon  from '../assets/img/js.png'
+import  htmlIcon  from '../assets/img/html.png'
+import  cssIcon  from '../assets/img/css.png'
+import  sassIcon  from '../assets/img/sass.png'
+import  mdbIcon  from '../assets/img/mdb.png'
+import  firebaseIcon  from '../assets/img/firebase.png'
+import  githubIcon  from '../assets/img/github.png'
+import  herokuIcon  from '../assets/img/heroku.png'
 
 export function Specialities(props) {
 
@@ -28,47 +41,21 @@ export function Specialities(props) {
 
     return (
         <section ref={myRef} className='main-container specialties' >
-
-            {/* <h1>EXPERIENCE</h1>
-            <ul>
-                <li>
-                    <div className="svg-container">
-                        <FaLaptopCode />
-                    </div>
-                    <h4>Front End</h4>
-                    <p>Experience with HTML, CSS and JS. Working with React,Vue and Angular and use the most popular technologies.</p>
-                </li>
-                <li>
-                    <div className="svg-container">
-                        <FaNodeJs />
-                    </div>
-                    <h4>Back End</h4>
-                    <p>Working with nodeJS, MongoDB, rest API and WebSocket.</p>
-                </li>
-                <li>
-                    <div className="svg-container">
-                        <FaCss3Alt />
-                    </div>
-                    <h4>Design</h4>
-                    <p>Working with Libraries such as Material UI and chartjs, design app using css and sass, with some experience in UX UI and responsive apps.</p>
-                </li>
-            </ul> */}
-
             <ul className='flex main-list'>
                 <li className={`main-titles ${checkChoosen('frameworks')}`} onClick={() => { setChoosen('frameworks') }}>
                     <h2>Frameworks</h2>
                     <ul>
                         <li>
-                            <FaReact />
+                            <img src={reactIcon} alt=""/>
                         </li>
                         <li>
-                            <FaVuejs />
+                            <img src={vueIcon} alt=""/>
                         </li>
                         <li>
-                            <FaAngular />
+                            <img src={angularIcon} alt=""/>
                         </li>
                         <li>
-                            <SiJquery />
+                            <img src={jqueryIcon} alt=""/>
                         </li>
                     </ul>
                 </li>
@@ -76,20 +63,19 @@ export function Specialities(props) {
                     <h2>Languages</h2>
                     <ul>
                         <li>
-                            <FaNode />
-
+                            <img src={nodejsIcon} alt=""/>
                         </li>
                         <li>
-                            <DiJavascript />
+                            <img src={jsIcon} alt=""/>
                         </li>
                         <li>
-                            <AiFillHtml5 />
+                            <img src={htmlIcon} alt=""/>
                         </li>
                         <li>
-                            <FaCss3Alt />
+                            <img src={cssIcon} alt=""/>
                         </li>
                         <li>
-                            <DiSass />
+                            <img src={sassIcon} alt=""/>
                         </li>
                     </ul>
                 </li>
@@ -97,19 +83,19 @@ export function Specialities(props) {
                     <h2>Services</h2>
                     <ul>
                         <li>
-                            <SiMongodb />
+                            <img src={mdbIcon} alt=""/>
                         </li>
                         {/* <li>
                             <SiMysql />
                         </li> */}
                         <li>
-                            <SiFirebase />
+                        <img src={firebaseIcon} alt=""/>
                         </li>
                         <li>
-                            <AiFillGithub />
+                        <img src={githubIcon} alt=""/>
                         </li>
                         <li>
-                            <SiHeroku />
+                        <img src={herokuIcon} alt=""/>
                         </li>
                     </ul>
                 </li>
