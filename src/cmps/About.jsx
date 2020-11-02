@@ -2,6 +2,10 @@ import React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { FaReact, FaNodeJs, FaCss3Alt } from 'react-icons/fa';
 import positionService from '../services/positionService';
+import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
+import cv from '../assets/files/cv.docx'
+
+
 
 
 
@@ -26,6 +30,10 @@ export function About(props) {
                 <div className="summary">
                     <h4>Hi, I'm a Full-Stack / Frontend  Web Developer with knowledge and experience writing single-page-applications Using the latest WEB technologies such as Node.js, Vue.js, Vuex, React.js and Angular</h4>
                     <h4>A team player, hard worker, focusing on problem solving and detailed orientation, self-learner responsible, and adapt quickly to new environments</h4>
+                    <button>
+                        <a href={cv}>
+                            <p>Download my CV </p>
+                            <SystemUpdateAltIcon /></a></button>
                 </div>
             </section>
         </div>

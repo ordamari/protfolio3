@@ -1,71 +1,126 @@
 .specialties {
     background-color: $clr5;
     text-align: center;
-    padding: 30px 0;
+    // padding: 80px 0;
 
-    ul {
-        padding-top: 50px;
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
+    // ul {
+    //     padding-top: 50px;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     gap: 30px;
 
-        li {
-            width: 33.3%;
-            text-align: center;
-            padding: 0 5px;
-            padding: 30px 5px;
+    //     li {
+    //         width: 33.3%;
+    //         text-align: center;
+    //         padding: 0 5px;
+    //         padding: 30px 5px;
 
-            .svg-container {
-                margin: 0 auto;
-                background-color: $clr2;
-                height: 150px;
-                width: 150px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                font-size: 100px;
+    //         .svg-container {
+    //             margin: 0 auto;
+    //             background-color: $clr2;
+    //             height: 150px;
+    //             width: 150px;
+    //             border-radius: 50%;
+    //             display: flex;
+    //             align-items: center;
+    //             font-size: 100px;
 
 
-                svg {
-                    margin: 0 auto;
+    //             svg {
+    //                 margin: 0 auto;
+    //             }
+    //         }
+
+    //         h4 {
+    //             margin-top: 30px;
+    //         }
+
+    //         p {
+    //             margin-top: 30px;
+    //             font-size: rem(16px);
+    //             color: $clr2;
+    //         }
+
+    //         &:hover{
+    //             background-color: #fff;
+    //             border-radius: 5px;
+    //         }
+    //     }
+    // }
+
+    // font-size: 40px;
+
+    .main-list {
+        align-items: start;
+        justify-content: left;
+
+        .main-titles {
+            cursor: pointer;
+            padding: 120px 0;
+            background-color: $clr5;
+            transition: width 1s;
+            width: 25%;
+            height: 100vh;
+
+            h2 {
+                transform: rotate(-90deg);
+                margin-bottom: 70px;
+            }
+
+            ul {
+                display: none;
+
+                li {
+                    p {
+                        font-size: 1rem;
+                    }
+
+                    font-size: 70px;
                 }
             }
 
-            h4 {
-                margin-top: 30px;
-            }
-
-            p {
-                margin-top: 30px;
-                font-size: rem(16px);
-                color: $clr2;
-            }
-
-            &:hover{
+            &.choosen {
                 background-color: #fff;
-                border-radius: 5px;
+                width: 50%;
+                transition: width 1s;
+
+                h2 {
+                    transition: transform 1s;
+                    transform: rotate(0deg);
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
             }
         }
-    }
 
-    font-size: 40px;
+    }
 }
 
-@media(max-width:760px){
-    .specialties{
-        ul{
-            flex-direction: column;
-            align-items: center;
-            li{
-                width: 100%;
+
+@media(max-width:500px) {
+    .specialties {
+        .main-list {
+            .main-titles {
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                ul {
+
+                    li {
+
+                        font-size: 50px;
+                    }
+                }
+
+
             }
-        }
-    }
-}
-@media(max-width:500px){
-    .specialties{
-        h1{
-            font-size: 42px;
+
         }
     }
 }

@@ -59,19 +59,15 @@
             max-width: 150px;
         }
         .main-img button {
-            padding: 10px;
-            margin-top: 25px;
-            background-color: rgba(0, 0, 0, 0.329);
-            color: $clr4;
-            border: 2px solid $clr4;
-            border-radius: 5px;
-            cursor: pointer;
+            max-width: 120px;
             font-size: 35px;
-            position: absolute;
-            left: -85px;
-            top: 50%;
-            transition: .5s;
-            z-index: 0;
+            transform: translate(0, -50%);
+
+            left: 10px;
+            &:hover{
+                font-size: 38px;
+
+            }
         }
     }
 }

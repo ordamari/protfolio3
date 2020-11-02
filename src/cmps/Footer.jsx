@@ -32,7 +32,7 @@ export function Footer(props) {
                     <a title="My github pages page" href="https://github.com/ordamari"><GitHubIcon /></a>
                     <a title="My linkedin pages page" href="https://www.linkedin.com/in/or-damari-8534561b3/"><LinkedInIcon /></a>
                     <a title="Messege me" href="https://wa.me/972503990939" aria-hidden="true"><WhatsAppIcon /></a>
-                    <a title="Dowloand my cv" href={cv}><SystemUpdateAltIcon /></a>
+                    {/* <a title="Dowloand my cv" href={cv}><SystemUpdateAltIcon /></a> */}
                     <a className="onlyMobile" title="Send me mail" href="mailto:ordamari971@gmail.com"><MailIcon /></a>
                 </div>
                 <div onClick={scrollToTareget} className="arrow">
