@@ -1,6 +1,7 @@
 .specialties {
     background-color: $clr5;
     text-align: center;
+
     .main-list {
         align-items: start;
         justify-content: left;
@@ -12,31 +13,31 @@
             transition: width 1s;
             width: 25%;
             height: 1013.64px;
+            box-shadow: inset 0px 0px 12px -10px #000000;
 
             h2 {
                 transform: rotate(-90deg);
-                margin-bottom: 70px;
             }
-
+            
             ul {
                 height: 100%;
-
+                
                 opacity: 0;
-
+                
                 li {
-                    width: 100px;
-
-
+                    width: 0;
                 }
             }
-
+            
             &.choosen {
                 background-color: #fff;
                 width: 50%;
-                height: 1013.64px;;
+                height: 1013.64px;
+                ;
                 transition: width 1s;
-
+                
                 h2 {
+                    margin-bottom: 70px;
                     transform: rotate(0deg);
                     transition: transform 1s;
                 }
@@ -48,6 +49,11 @@
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
+
+                    li{
+                        transition: width 1s;
+                        width: 100px;
+                    }
                 }
             }
         }
