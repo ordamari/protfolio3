@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/protfolio/static/css/main.4b0845c2.chunk.css",
+    "main.css": "/protfolio/static/css/main.9aeb4e29.chunk.css",
     "main.js": "/protfolio/static/js/main.ee1113d8.chunk.js",
     "main.js.map": "/protfolio/static/js/main.ee1113d8.chunk.js.map",
     "runtime-main.js": "/protfolio/static/js/runtime-main.99ba69e7.js",
@@ -8,9 +8,9 @@
     "static/js/2.62d76f1c.chunk.js": "/protfolio/static/js/2.62d76f1c.chunk.js",
     "static/js/2.62d76f1c.chunk.js.map": "/protfolio/static/js/2.62d76f1c.chunk.js.map",
     "index.html": "/protfolio/index.html",
-    "precache-manifest.105bacc990f4c4ddf7f3d4203d326240.js": "/protfolio/precache-manifest.105bacc990f4c4ddf7f3d4203d326240.js",
+    "precache-manifest.98fac2601d4ff08c89b3b861709af734.js": "/protfolio/precache-manifest.98fac2601d4ff08c89b3b861709af734.js",
     "service-worker.js": "/protfolio/service-worker.js",
-    "static/css/main.4b0845c2.chunk.css.map": "/protfolio/static/css/main.4b0845c2.chunk.css.map",
+    "static/css/main.9aeb4e29.chunk.css.map": "/protfolio/static/css/main.9aeb4e29.chunk.css.map",
     "static/js/2.62d76f1c.chunk.js.LICENSE": "/protfolio/static/js/2.62d76f1c.chunk.js.LICENSE",
     "static/media/global.scss": "/protfolio/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/angular.png": "/protfolio/static/media/angular.d699480d.png",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.99ba69e7.js",
     "static/js/2.62d76f1c.chunk.js",
-    "static/css/main.4b0845c2.chunk.css",
+    "static/css/main.9aeb4e29.chunk.css",
     "static/js/main.ee1113d8.chunk.js"
   ]
 }
