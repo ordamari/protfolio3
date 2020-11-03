@@ -50,6 +50,12 @@ a {
     text-decoration: none;
 }
 
+.hide{
+    opacity: 0;
+    transition: .5s;
+    display: none;
+}
+
 @media(max-width:760px){
     .onlyDesktop{
         display: none;

@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import positionService from '../services/positionService';
 import MenuIcon from '@material-ui/icons/Menu';
+import eventBus from '../services/event-bus-service'
+
 
 export function Navbar(props) {
 
@@ -21,6 +23,7 @@ export function Navbar(props) {
     }, [isOpen])
 
     function toggleMenu() {
+        eventBus.emit('toggle-is-open', isOpen )
         setIsOpen(!isOpen);
     }
 
