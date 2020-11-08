@@ -25,6 +25,9 @@
     &.align-center {
         align-items: center;
     }
+    &.align-start {
+        align-items: start;
+    }
     &.space-between{
         justify-content: space-between;
     }
@@ -47,4 +50,16 @@
 }
 .bgclr1{
     background-color: $clr1;
+}
+
+.mr10{
+    margin-right: 10px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.flex-end{
+    justify-content: flex-end;
 }

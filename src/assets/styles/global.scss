@@ -12,16 +12,8 @@
 @import "basics/buttons.scss";
 
 // Components
-@import "components/navbar.scss";
-@import "components/projectPreview.scss";
-@import "components/specialties.scss";
-@import "components/about.scss";
-@import "components/footer.scss";
-@import "components/protfolio.scss";
-
-// views
-@import "views/home.scss";
-@import "views/projectDetails.scss";
+@import "components/column.scss";
+@import "components/specialities.scss";
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -30,15 +22,17 @@
 /* Track */
 ::-webkit-scrollbar-track {
     border-radius: 120px;
+    height: 3px;
+    width: 3px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $clr2;
+    background: $clr3;
     border-radius: 2px;
 }
 ::-webkit-scrollbar-button {
-    background: $clr2;
-    height: 5px;
+    height: 0px;
+    width: 0;
 }
 
